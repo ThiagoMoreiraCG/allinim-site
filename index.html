@@ -2,74 +2,107 @@
 
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>ALLINIM - Serviços sob demanda</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALLINIM - Serviços sob demanda</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: white;
-      text-align: center;
-    }
+<style>
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+  }
 
-    header {
-      padding: 80px 20px;
-      background: linear-gradient(135deg, #2563eb, #1e3a8a);
-    }
+  header {
+    background: linear-gradient(135deg, #2563eb, #1e3a8a);
+    padding: 80px 20px;
+    text-align: center;
+  }
 
-    h1 {
-      font-size: 48px;
-      margin: 0;
-    }
+  header h1 {
+    font-size: 52px;
+    margin: 0;
+    color: white;
+  }
 
-    p {
-      font-size: 18px;
-      max-width: 600px;
-      margin: 20px auto;
-    }
+  header p {
+    font-size: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+  }
 
-    .btn {
-      display: inline-block;
-      padding: 15px 25px;
-      background: #22c55e;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      margin-top: 20px;
-    }
+  .btn {
+    display: inline-block;
+    background: #22c55e;
+    padding: 15px 30px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+  }
 
-    section {
-      padding: 60px 20px;
-    }
+  .container {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+  }
 
-    .features {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
+  h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
 
-    .card {
-      background: #1e293b;
-      padding: 20px;
-      border-radius: 10px;
-      width: 280px;
-    }
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
 
-    footer {
-      background: #020617;
-      padding: 30px;
-      font-size: 14px;
-    }
+  .card {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 12px;
+    width: 280px;
+    text-align: center;
+    transition: 0.3s;
+  }
 
-    a {
-      color: #38bdf8;
-      text-decoration: none;
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .card h3 {
+    color: #38bdf8;
+  }
+
+  .highlight {
+    text-align: center;
+    font-size: 18px;
+    max-width: 700px;
+    margin: auto;
+  }
+
+  footer {
+    background: #020617;
+    padding: 40px;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  a {
+    color: #38bdf8;
+    text-decoration: none;
+  }
+
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 36px;
     }
-  </style>
+  }
+</style>
 
 </head>
 
@@ -78,46 +111,56 @@
 <header>
   <h1>ALLINIM</h1>
   <p>Conectando quem precisa com quem sabe fazer.</p>
-  <p>Solicite serviços de forma rápida, segura e prática.</p>
-  <a class="btn" href="#">Em breve na Play Store</a>
+  <p>Solicite serviços com rapidez, segurança e praticidade.</p>
+
+<a href="#" class="btn">Em breve na Play Store</a>
+
 </header>
 
-<section>
+<section class="container">
   <h2>Como funciona</h2>
 
   <div class="features">
     <div class="card">
-      <h3>1. Solicite</h3>
-      <p>Descreva o serviço que você precisa em poucos passos.</p>
+      <h3>Solicite</h3>
+      <p>Descreva o serviço em poucos passos.</p>
     </div>
 
 ```
 <div class="card">
-  <h3>2. Receba propostas</h3>
-  <p>Profissionais próximos enviam ofertas rapidamente.</p>
+  <h3>Receba propostas</h3>
+  <p>Profissionais próximos entram em contato rapidamente.</p>
 </div>
 
 <div class="card">
-  <h3>3. Escolha e acompanhe</h3>
-  <p>Escolha o melhor profissional e acompanhe tudo pelo app.</p>
+  <h3>Escolha e acompanhe</h3>
+  <p>Acompanhe tudo diretamente pelo aplicativo.</p>
 </div>
 ```
 
   </div>
 </section>
 
-<section>
+<section class="container">
   <h2>Serviços disponíveis</h2>
-  <p>
-    Eletricista, encanador, técnico, babá, manutenção, e muito mais.
+  <p class="highlight">
+    Eletricistas, encanadores, técnicos, babás, manutenção e muito mais.
+    Tudo em um só lugar.
   </p>
 </section>
 
-<section>
-  <h2>Segurança e confiança</h2>
-  <p>
-    Todos os serviços são realizados com acompanhamento pela plataforma,
-    garantindo mais segurança para clientes e profissionais.
+<section class="container">
+  <h2>Segurança em primeiro lugar</h2>
+  <p class="highlight">
+    O ALLINIM oferece uma experiência segura com controle de solicitações,
+    comunicação dentro da plataforma e acompanhamento completo dos serviços.
+  </p>
+</section>
+
+<section class="container">
+  <h2>Para profissionais</h2>
+  <p class="highlight">
+    Receba solicitações de serviços, aumente sua renda e gerencie seus atendimentos diretamente pelo app.
   </p>
 </section>
 
@@ -128,6 +171,10 @@
     <a href="/terms.html">Termos de Uso</a>
   </p>
 </footer>
+
+</body>
+</html>
+
 
 </body>
 </html>
